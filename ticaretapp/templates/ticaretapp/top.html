@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<br>
+
+<div class="card" style="width: 20rem; border-color: green;">
+  <img src="{% static 'ticaretapp/top.jpeg' %}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Futbol Topu</h5>
+    <p class="card-text"><strong><h3>Fiyat:4.000TL</h3></strong></p>
+    <a href="{% url 'ticaretapp:casepagetop' %}" class="btn btn-danger">Satın Al</a>
+  </div>
+</div>
+
+<br>
+
+<div class="card" style="border-color: green; width: 20rem;">
+  <div class="card-body">
+      <p class="card-text"><strong>Teslimat Süresi:</strong>1 Ay</p>
+  </div>
+</div>
+
+<br>
+
+{% endblock %}

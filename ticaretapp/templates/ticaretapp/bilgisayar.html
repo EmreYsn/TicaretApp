@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<br>
+
+<div class="card" style="width: 35rem; border-color: red;">
+  <img src="{% static 'ticaretapp/bilgisayar.jpeg' %}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Bilgisayar</h5>
+    <p class="card-text"><strong>Windows:11 <br> Ram:8GM <br> SSD:256GB <br> Ekran Kartı:Nvidia GeForce RTX 1080 <br> İşlemci:10.Nesil İntel Core i5 <br> <h3>Fiyat:25.000TL</h3></strong></p>
+    <a href="{% url 'ticaretapp:casepagebilgisayar' %}" class="btn btn-danger">Satın Al</a>
+  </div>
+</div>
+
+<br>
+
+<div class="card" style="border-color: red; width: 35rem;">
+  <div class="card-body">
+      <p class="card-text"><strong>Teslimat Süresi:</strong>4 Gün</p>
+  </div>
+</div>
+
+<br>
+
+{% endblock %}

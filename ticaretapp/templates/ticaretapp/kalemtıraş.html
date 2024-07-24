@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<br>
+
+<div class="card" style="width: 20rem; border-color: blue;">
+  <img src="{% static 'ticaretapp/kalemtıraş.jpeg' %}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Kalemtıraş</h5>
+    <p class="card-text"><strong>Renk:Kırmızı <br> Bölme Sayısı:2 <br> <h3>Fiyat:50TL</h3></strong></p>
+    <a href="{% url 'ticaretapp:casepagekalemtıraş' %}" class="btn btn-danger">Satın Al</a>
+  </div>
+</div>
+
+<br>
+
+<div class="card" style="border-color: blue; width: 20rem;">
+  <div class="card-body">
+      <p class="card-text"><strong>Teslimat Süresi:</strong>3 Saat 30 Dakika</p>
+  </div>
+</div>
+
+<br>
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<br>
+
+<div class="card" style="width: 30rem; border-color: pink;">
+  <img src="{% static 'ticaretapp/çamaşır.jpg' %}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Çamaşır Suyu</h5>
+    <p class="card-text"><strong>Hacim:1 Litre <br> <h3>Fiyat:48TL</h3></strong></p>
+    <a href="{% url 'ticaretapp:casepageçamaşır' %}" class="btn btn-danger">Satın Al</a>
+  </div>
+</div>
+
+<br>
+
+<div class="card" style="border-color: pink; width: 30rem;">
+  <div class="card-body">
+      <p class="card-text"><strong>Teslimat Süresi:</strong>2 Saat</p>
+  </div>
+</div>
+
+<br>
+
+{% endblock %}

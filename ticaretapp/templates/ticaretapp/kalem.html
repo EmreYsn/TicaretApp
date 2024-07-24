@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<br>
+
+<div class="card" style="width: 30rem; border-color: blue;">
+  <img src="{% static 'ticaretapp/kalem.jpeg' %}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Kalem</h5>
+    <p class="card-text"><strong>Renk:Mavi <br> Uzunluk:10 santimetre <br> <h3>Fiyat:15TL</h3></strong></p>
+    <a href="{% url 'ticaretapp:casepagekalem' %}" class="btn btn-danger">Satın Al</a>
+  </div>
+</div>
+
+<br>
+
+<div class="card" style="border-color: blue; width: 30rem;">
+    <div class="card-body">
+        <p class="card-text"><strong>Teslimat Süresi:</strong>2 Saat</p>
+    </div>
+</div>
+
+<br>
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<br>
+
+<div class="card" style="width: 25rem; border-color: brown;">
+    <img src="{% static 'ticaretapp/şampuan.jpeg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Şampuan</h5>
+      <p class="card-text"><strong>Saç Dökülme Karşı Etki:Var <br> Hacim:1 Litre <br> <h3>Fiyat:250TL</h3></strong></p>
+      <a href="{% url 'ticaretapp:casepageşampuan' %}" class="btn btn-danger">Satın Al</a>
+    </div>
+  </div>
+
+<br>
+
+<div class="card" style="border-color: brown; width: 25rem;">
+  <div class="card-body">
+      <p class="card-text"><strong>Teslimat Süresi:</strong>1 Saat</p>
+  </div>
+</div>
+
+<br>
+
+{% endblock %}

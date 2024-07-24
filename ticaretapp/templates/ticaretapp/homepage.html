@@ -1,0 +1,209 @@
+{% extends "base.html" %}
+{% load static %}
+{% csrf_token %}
+
+{% block content %}
+
+<br>
+
+<h1><strong>Ana Sayfa</strong></h1>
+
+<br>
+
+<div class="row">
+
+  <div class="col">
+  <div class="card" style="width: 15rem; border-color: blue; height: 25rem;">
+      <a href="{% url 'ticaretapp:kalem' %}"><img src="{% static 'ticaretapp/kalem.jpeg' %}" class="card-img-top"></a>
+      <div class="card-body">
+        <h5 class="card-title"><strong>Kalem</strong></h5>
+      </div>
+    </div>
+    </div>
+
+    <div class="col">
+    <div class="card" style="width: 15rem; border-color: blue; height: 25rem;">
+      <a href="{% url 'ticaretapp:kalemtıraş' %}"><img src="{% static 'ticaretapp/kalemtıraş.jpeg' %}" class="card-img-top" alt="..."></a>
+      <div class="card-body">
+        <h5 class="card-title"><strong>Kalemtıraş</strong></h5>
+      </div>
+    </div>
+    </div>
+
+    <div class="col">
+  <div class="card" style="width: 15rem; border-color: blue; height: 25rem;">
+    <a href="{% url 'ticaretapp:tükenmez' %}"><img src="{% static 'ticaretapp/tükenmez kalem.jpeg' %}" class="card-img-top" alt="..."></a>
+    <div class="card-body">
+      <h5 class="card-title"><strong>Tükenmez Kalem</strong></h5>
+    </div>
+  </div>
+  </div>
+
+</div>
+
+<br>
+
+<div class="row">
+
+  <div class="col">
+  <div class="card" style="width: 15rem; border-color: red; height: 19rem;">
+    <a href="{% url 'ticaretapp:bilgisayar' %}"><img src="{% static 'ticaretapp/bilgisayar.jpeg' %}" class="card-img-top" alt="..."></a>
+    <div class="card-body">
+      <h5 class="card-title"><strong>Bilgisayar</strong></h5>
+    </div>
+  </div>
+  </div>
+
+  <div class="col">
+  <div class="card" style="width: 15rem; border-color: red;">
+    <a href="{% url 'ticaretapp:telefon' %}"><img src="{% static 'ticaretapp/telefon.jpg' %}" class="card-img-top" alt="..."></a>
+    <div class="card-body">
+      <h5 class="card-title"><strong>Akıllı Telefon</strong></h5>
+    </div>
+  </div>
+  </div>
+
+  <div class="col">
+  <div class="card" style="width: 15rem; border-color: red;">
+    <a href="{% url 'ticaretapp:saat' %}"><img src="{% static 'ticaretapp/saat.jpg' %}" class="card-img-top" alt="..."></a>
+    <div class="card-body">
+      <h5 class="card-title"><strong>Akıllı Saat</strong></h5>
+    </div>
+  </div>
+  </div>
+
+</div>
+
+<br>
+
+<div class="row">
+
+  <div class="col">
+  <div class="card" style="width: 15rem; border-color: green; height: 22rem;">
+    <a href="{% url 'ticaretapp:araba' %}"><img src="{% static 'ticaretapp/araba.jpg' %}" class="card-img-top" alt="..."></a>
+    <div class="card-body">
+      <h5 class="card-title"><strong>Uzaktan Kumandalı Araba</strong></h5>
+    </div>
+  </div>
+  </div>
+
+  <div class="col">
+  <div class="card" style="width: 15rem; border-color: green; height: 22rem;">
+    <a href="{% url 'ticaretapp:bebek' %}"><img src="{% static 'ticaretapp/bebek.jpg' %}" class="card-img-top" alt="..."></a>
+    <div class="card-body">
+      <h5 class="card-title"><strong>Oyuncak Bebek</strong></h5>
+    </div>
+  </div>
+  </div>
+
+  <div class="col">
+  <div class="card" style="width: 13rem; border-color: green; height: 22rem;">
+    <a href="{% url 'ticaretapp:top' %}"><img src="{% static 'ticaretapp/top.jpeg' %}" class="card-img-top" alt="..."></a>
+    <div class="card-body">
+      <h5 class="card-title"><strong>Futbol Topu</strong></h5>
+    </div>
+  </div>
+  </div>
+
+</div>
+
+<br>
+
+<div class="row">
+
+  <div class="col">
+  <div class="card" style="width: 15rem; border-color: pink;">
+    <a href="{% url 'ticaretapp:çamaşır' %}"><img src="{% static 'ticaretapp/çamaşır.jpg' %}" class="card-img-top" alt="..."></a>
+    <div class="card-body">
+      <h5 class="card-title"><strong>Çamaşır Suyu</strong></h5>
+    </div>
+  </div>
+  </div>
+
+  <div class="col">
+  <div class="card" style="width: 15rem; border-color: pink;">
+    <a href="{% url 'ticaretapp:deterjan' %}"><img src="{% static 'ticaretapp/deterjan.jpg' %}" class="card-img-top" alt="..."></a>
+    <div class="card-body">
+      <h5 class="card-title"><strong>Deterjan</strong></h5>
+    </div>
+  </div>
+  </div>
+
+  <div class="col">
+  <div class="card" style="width: 15rem; border-color: pink; height: 19rem;">
+    <a href="{% url 'ticaretapp:havlu' %}"><img src="{% static 'ticaretapp/havlu.jpg' %}" class="card-img-top" alt="..."></a>
+      <h5 class="card-title"><strong>Kağıt Havlu</strong></h5>
+    </div>
+  </div>
+  </div>
+
+</div>
+
+<br>
+
+<div class="row">
+
+  <div class="col">
+  <div class="card" style="width: 15rem; border-color: turquoise; height: 25rem;">
+    <a href="{% url 'ticaretapp:kola' %}"><img src="{% static 'ticaretapp/kola.jpeg' %}" class="card-img-top" alt="..."></a>
+    <div class="card-body">
+      <h5 class="card-title"><strong>Kola</strong></h5>
+    </div>
+  </div>
+  </div>
+
+  <div class="col">
+  <div class="card" style="width: 15rem; border-color: turquoise; height: 25rem;">
+    <a href="{% url 'ticaretapp:limonata' %}"><img src="{% static 'ticaretapp/limonata.jpeg' %}" class="card-img-top" alt="..."></a>
+    <div class="card-body">
+      <h5 class="card-title"><strong>Limonata</strong></h5>
+    </div>
+  </div>
+  </div>
+
+  <div class="col">
+  <div class="card" style="width: 15rem; border-color: turquoise; height: 25rem;">
+    <a href="{% url 'ticaretapp:su' %}"><img src="{% static 'ticaretapp/su.jpg' %}" class="card-img-top" alt="..."></a>
+    <div class="card-body">
+      <h5 class="card-title"><strong>Su</strong></h5>
+    </div>
+  </div>
+  </div>
+
+</div>
+
+<br>
+
+<div class="row">
+    <div class="col">
+      <div class="card" style="width: 15rem; border-color: brown; height: 22rem;">
+        <a href="{% url 'ticaretapp:şampuan' %}"><img src="{% static 'ticaretapp/şampuan.jpeg' %}" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+          <h5 class="card-title"><strong>Şampuan</strong></h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card" style="width: 15rem; border-color: brown; height: 22rem;">
+        <a href="{% url 'ticaretapp:sabun' %}"><img src="{% static 'ticaretapp/sıvısabun.jpg' %}" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+          <h5 class="card-title"><strong>Sıvı Sabun</strong></h5>
+          </div>
+        </div>
+    </div>
+
+    <div class="col">
+      <div class="card" style="width: 15rem; border-color: brown; height: 22rem;">
+        <a href="{% url 'ticaretapp:parfüm' %}"><img src="{% static 'ticaretapp/parfüm.jpeg' %}" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+          <h5 class="card-title"><strong>Parfüm</strong></h5>
+          </div>
+        </div>
+    </div>
+
+</div>
+
+<br><br>
+
+{% endblock %}

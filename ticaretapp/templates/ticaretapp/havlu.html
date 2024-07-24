@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<br>
+
+<div class="card" style="width: 30rem; border-color: pink;">
+  <img src="{% static 'ticaretapp/havlu.jpg' %}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Kağıt Havlu</h5>
+    <p class="card-text"><strong>Rulo Sayısı:6 <br> <h3>Fiyat:200TL</h3></strong></p>
+    <a href="{% url 'ticaretapp:casepagehavlu' %}" class="btn btn-danger">Satın Al</a>
+  </div>
+</div>
+
+<br>
+
+<div class="card" style="border-color: pink; width: 30rem;">
+  <div class="card-body">
+      <p class="card-text"><strong>Teslimat Süresi:</strong>2 Saat 15 Dakika</p>
+  </div>
+</div>
+
+<br>
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<br>
+
+<div class="card" style="width: 25rem; border-color: brown;">
+    <img src="{% static 'ticaretapp/sıvısabun.jpg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Sıvı Sabun</h5>
+      <p class="card-text"><strong>Hacim:400 Mililitre <br> Aroma:Lavanta Tazeliği <h3>Fiyat:40TL</h3></strong></p>
+      <a href="{% url 'ticaretapp:casepagesabun' %}" class="btn btn-danger">Satın Al</a>
+    </div>
+  </div>
+
+<br>
+
+<div class="card" style="border-color: brown; width: 25rem;">
+  <div class="card-body">
+      <p class="card-text"><strong>Teslimat Süresi:</strong>45 Dakika</p>
+  </div>
+</div>
+
+<br>
+
+{% endblock %}

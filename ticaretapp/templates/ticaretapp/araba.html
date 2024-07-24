@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<br>
+
+<div class="card" style="width: 30rem; border-color: green;">
+  <img src="{% static 'ticaretapp/araba.jpg' %}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Uzaktan Kumandalı Araba</h5>
+    <p class="card-text"><strong>Kumanda Menzili:15 metre <br> Renk:Gri <br> <h3>Fiyat:1.500TL</h3></strong></p>
+    <a href="{% url 'ticaretapp:casepagearaba' %}" class="btn btn-danger">Satın Al</a>
+  </div>
+</div>
+
+<br>
+
+<div class="card" style="border-color: green; width: 30rem;">
+  <div class="card-body">
+      <p class="card-text"><strong>Teslimat Süresi:</strong>1 Gün 8 Saat</p>
+  </div>
+</div>
+
+<br>
+
+{% endblock %}

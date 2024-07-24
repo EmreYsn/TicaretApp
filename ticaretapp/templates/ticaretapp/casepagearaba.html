@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<br>
+
+<h1><strong>Sepet</strong></h1>
+
+<br>
+
+    <h2 class="mb-3">Ürün Bilgileri</h2>
+    <form class="needs-validation" novalidate>
+        <div class="row g-3">
+            <div class="col-sm-6">
+                <label class="form-label"><strong>Uzaktan Kumandalı Araba</strong></label>
+                <br>
+                <a href="{% url 'ticaretapp:araba' %}"><img src="{% static 'ticaretapp/araba.jpg' %}" style="width: 15rem;"></a>
+                <br>
+                <label class="form-label"><strong><h3>Fiyat:3.500TL</h3></strong></label>
+            </div>
+        </div>
+    </form>
+
+    <h2 class="mb-3">Fatura Bilgileri</h2>
+    <form class="needs-validation" novalidate>
+      <div class="row g-3">
+        <div class="col-sm-6">
+          <label for="firstName" class="form-label">Ad</label>
+          <input type="text" class="form-control" id="firstName" placeholder="" value="" aria-required="true" required>
+          <div class="invalid-feedback">
+            Geçerli isim gerekli
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <label for="lastName" class="form-label">Soyad</label>
+          <input type="text" class="form-control" id="lastName" placeholder="" value="" aria-required="true" required>
+          <div class="invalid-feedback">
+            Geçerli soyad gerekli
+          </div>
+        </div>
+
+        <div class="col-12">
+          <label for="address" class="form-label">Adres</label>
+          <input type="text" class="form-control" id="address" placeholder="1234 Caddesi" aria-required="true" required>
+          <div class="invalid-feedback">
+            Lütfen adresinizi doğru giriniz
+          </div>
+        </div>
+
+        <h2 class="mb-3">Ödeme Bilgileri</h2>
+
+        <div class="my-3">
+          <div class="form-check">
+            <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked aria-required="true" required>
+            <label class="form-check-label" for="credit">Kredi Kartı</label>
+          </div>
+          <div class="form-check">
+            <input id="debit" name="paymentMethod" type="radio" class="form-check-input" aria-required="true" required>
+            <label class="form-check-label" for="debit">Banka Kartı</label>
+          </div>
+          <div class="form-check">
+            <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" aria-required="true" required>
+            <label class="form-check-label" for="paypal">PayPal</label>
+          </div>
+        </div>
+
+        <div class="row gy-3">
+          <div class="col-md-6">
+            <label for="cc-name" class="form-label">Kartın Adı</label>
+            <input type="text" class="form-control" id="cc-name" placeholder="" aria-required="true" required>
+            <small class="text-body-secondary">Kartta görüntülenen tam ad</small>
+            <div class="invalid-feedback">
+                Karttaki isim gerekli
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="cc-number" class="form-label">Kredi Kartı Numarası</label>
+            <input type="text" class="form-control" id="cc-number" placeholder="" aria-required="true" required>
+            <div class="invalid-feedback">
+              Kredi kartı numarası gereklidir
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <label for="cc-expiration" class="form-label">Son Kullanma Tarihi</label>
+            <input type="text" class="form-control" id="cc-expiration" placeholder="" aria-required="true" required>
+            <div class="invalid-feedback">
+              Son kullanma tarihi gereklidir
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <label for="cc-cvv" class="form-label">CVV</label>
+            <input type="text" class="form-control" id="cc-cvv" placeholder="" aria-required="true" required>
+            <div class="invalid-feedback">
+              Güvenlik kodu gereklidir
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4">
+
+        <button class="w-100 btn btn-primary btn-lg" type="submit">Ödeme</button>
+    </form>
+</div>
+
+<script src="{% static 'ticaretapp/checkout.js' %}"></script>
+
+{% endblock %}
